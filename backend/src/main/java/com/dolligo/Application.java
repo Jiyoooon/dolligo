@@ -1,6 +1,7 @@
 package com.dolligo;
 
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -9,7 +10,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableCaching//캐시 사용하겠다
+@EnableBatchProcessing //배치 기능 활성화
+@EnableCaching//캐시 기능 활성화
 @EnableScheduling//background task executor 생성 => for @Scheduled 
 @ServletComponentScan//filter사용
 @SpringBootApplication

@@ -166,6 +166,7 @@ public class AdvertiserPaperService implements IAdvertiserPaperService {
 
 	@Override
 	public void insertPaper(PaperForPost paper) {
+		paper.setP_point(15);//상세조회시 얻는 포인트
 		pfpRepo.save(paper);
 		
 		Paperanalysis pa = new Paperanalysis();
