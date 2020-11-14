@@ -1,5 +1,7 @@
 package com.dolligo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -9,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.dolligo.controller.AdvertiserPaperController;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor // 생성자 DI를 위한 lombok 어노테이션
 @Configuration
 public class StatisticsJobConfiguration {
+	public static final Logger log = LoggerFactory.getLogger(AdvertiserPaperController.class);
 	@Autowired
 	private JobBuilderFactory jobBuilderFactory; //생성자 di 받음
 	@Autowired
@@ -32,7 +37,7 @@ public class StatisticsJobConfiguration {
 	public Step step1() {
 		return stepBuilderFactory.get("statisticsStep1")
 				.tasklet((contribution, chunkContext) -> {
-//					log.info(">>>>> This is Step1");
+					log.info(">>>>> This is Step1");
 					//광고주별 advertiseranalysis 통계 데이터 계산해서 저장..!
 					// 성별 원형 퍼센테이지
 					// 연령별 원형 퍼센테이지
