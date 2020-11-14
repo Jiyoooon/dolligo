@@ -1,3 +1,4 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -29,7 +30,26 @@ class SettingPage extends StatelessWidget {
           SettingTile(Constants.notifySet, Icons.add_alert),
           SettingTile(Constants.privateInfoSet, Icons.person),
           SettingTile(Constants.adBlockSet, Icons.block),
-          SettingTile(Constants.logout, Icons.logout),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [ ListTile(
+              title: Text(
+                  'dd',
+                  style: TextStyle(fontWeight: FontWeight.bold)
+              ),
+              trailing: Wrap(
+                spacing: 12,
+                children: <Widget>[
+                  SizedBox(
+                      child: Icon(Icons.chevron_right,
+                          color: Colors.deepPurpleAccent,
+                          size: 30.0)
+                  ),
+                ],
+              ),
+            ),]
+          )
+
         ],
       ),
     );
@@ -73,18 +93,21 @@ class SettingTile extends StatelessWidget {
         }
         else if(_name == Constants.logout) {
           FlutterSecureStorage().delete(key: 'token');    // token 삭제
-          Fluttertoast.showToast(
-              msg: '로그아웃이 되었습니다',
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
-              timeInSecForIosWeb: 1,
-              backgroundColor: Colors.grey,
-              textColor: Colors.white,
-              fontSize: 16.0
-          );
-          Navigator.pushAndRemoveUntil(context,
+
+          AwesomeDialog(
+            context: context,
+            animType: AnimType.SCALE,
+            headerAnimationLoop: false,
+            dialogType: DialogType.SUCCES,
+            title: '다음에 또 와요!',
+            desc: '로그아웃 되었습니다',
+            btnOkIcon: Icons.check_circle,
+            btnOkOnPress: () {
+              debugPrint('OnClcik');
+            },
+          )..show().then((value) => Navigator.pushAndRemoveUntil(context,
               MaterialPageRoute(builder: (BuildContext context) => WelcomeScreen()), (route) => false
-          );
+          ));
         }
       },
       leading: SizedBox(
