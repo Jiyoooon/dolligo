@@ -47,8 +47,8 @@
 
 
 * 로그인 / 메인화면 / 설정탭
-  ![login & main_layout](/document/gif/user_1.gif)
-
+![login & main_layout](/document/gif/user_1.gif)
+  =======
 
 * 전단지 보기 - 포인트 / 쿠폰 받기
 
