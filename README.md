@@ -47,30 +47,40 @@
 
 
 * 로그인 / 메인화면 / 설정탭
-![login & main_layout](/document/gif/user_1.gif)
-  =======
+
+  <img src="/document/gif/user_1.gif" height="500" align="left"/>
+
+  
 
 * 전단지 보기 - 포인트 / 쿠폰 받기
 
-  ![paper_list](/document/gif/user_2.gif)
+  <img src="/document/gif/user_2.gif" height="500" align="left"/>
+  
+  
 
 
 * 포인트 / 쿠폰 확인
 
-  ![point & coupon](/document/gif/user_3.gif)
+  <img src="/document/gif/user_3.gif" height="500" align="left"/>
+  
+  
 
 
 * 전단지 차단
 
-  ![block_paper](/document/gif/user_4.gif)
+  <img src="/document/gif/user_4.gif" height="500" align="left"/>
 
-* 포인트 사용
+  
 
-  ![gifticon & to_coin](/document/gif/user_5.gif)
+* 포인트 사용(기프티콘 & 현금화)
+
+  <img src="/document/gif/user_5.gif" height="500" align="left"/>
+
+  
 
 * 프로필 수정
 
-  ![mypage](/document/gif/user_6.gif)
+  <img src="/document/gif/user_6.gif" height="500" align="left"/>
 
 
 
@@ -78,19 +88,25 @@
 
 * 대시보드 화면
 
-  ![dashboard](/document/gif/advertiser_1.gif)
+  <img src="/document/gif/advertiser_1.gif" height="400" align="left"/>
+
+  
 
 * 전단지 관리
 
-  ![add_paper](/document/gif/advertiser_2.gif)
+  <img src="/document/gif/advertiser_2.gif" height="400" align="left"/>
+
+  
 
 * qr 방문 인증
 
-  ![qr](/document/gif/advertiser_3.gif)
+  <img src="/document/gif/advertiser_3.gif" height="500" align="left"/>
+
+  
 
 * 설정
 
-  ![mypage](/document/gif/advertiser_4.gif)
+  <img src="/document/gif/advertiser_4.gif" height="500" align="left"/>
 
 
 
