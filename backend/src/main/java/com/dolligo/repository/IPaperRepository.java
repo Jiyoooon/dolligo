@@ -31,12 +31,12 @@ public interface IPaperRepository extends JpaRepository<Paper, Integer>{
 	int findByAidAndPid(String aid, int pid);
 
 	
-//	@Query(value = "select * from paper where (6371 * acos(cos(radians(37.498095)) * cos(radians(lat)) * " + 
-//			"cos(radians(lon) - radians(127.027610)) + sin(radians(37.498095)) * sin(radians(lat)))) <= 0.2", nativeQuery = true)
-//	List<Paper> findAllByGps();//강남
-	@Query(value = "select * from paper where (6371 * acos(cos(radians(37.500628)) * cos(radians(lat)) * " + 
-			"cos(radians(lon) - radians(127.036436)) + sin(radians(37.500628)) * sin(radians(lat)))) <= 0.2", nativeQuery = true)
-	List<Paper> findAllByGps();//역삼
+	@Query(value = "select * from paper where (6371 * acos(cos(radians(37.4976716)) * cos(radians(lat)) * " + 
+			"cos(radians(lon) - radians(127.0267342)) + sin(radians(37.4976716)) * sin(radians(lat)))) <= 0.1 order by rand() limit 0, 20", nativeQuery = true)
+	List<Paper> findAllByGps();//강남
+//	@Query(value = "select * from paper where (6371 * acos(cos(radians(37.500628)) * cos(radians(lat)) * " + 
+//			"cos(radians(lon) - radians(127.036436)) + sin(radians(37.500628)) * sin(radians(lat)))) <= 0.2", nativeQuery = true)
+//	List<Paper> findAllByGps();//역삼
 
 
 //    List<PaperMapping> findAllBy(Pageable pageable);

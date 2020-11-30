@@ -1116,12 +1116,14 @@ public class DataInsertService implements IDataInsertService{
 		//gps 값 변경 random
 		int size = paper.size();
 //		System.out.println("개수 : "+size);
-		for(int i = 0; i < 400; i++) {//random_gps id값
-			RandomGps rg = rgs.get(i);
+		for(int i = 0; i < size; i++) {//random_gps id값
+//			RandomGps rg = rgs.get(i);
 			Paper p = paper.get(i);
 //			System.out.println(p);
-			p.setLat(Double.toString(37.0 + Double.parseDouble(rg.getLat())));
-			p.setLon(Double.toString(127.0 + Double.parseDouble(rg.getLon())));
+//			p.setLat(Double.toString(37.0 + Double.parseDouble(rg.getLat())));
+//			p.setLon(Double.toString(127.0 + Double.parseDouble(rg.getLon())));
+			p.setLat("0");
+			p.setLon("0");
 //			System.out.println(p);
 			pRepo.save(p);
 		}

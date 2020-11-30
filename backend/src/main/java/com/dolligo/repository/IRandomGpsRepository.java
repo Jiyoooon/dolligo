@@ -13,9 +13,7 @@ import com.dolligo.dto.TimeGraph;
 @Repository
 public interface IRandomGpsRepository extends JpaRepository<RandomGps, Integer>{
 		
-	@Query(value = "select * from random_gps " + 
-			"where " + 
-			"(6371 * acos(cos(radians(37.500628)) * cos(radians(37 + lat)) * " + 
-			"cos(radians(127 + lon) - radians(127.036436)) + sin(radians(37.500628)) * sin(radians(37 + lat)))) < 1 order by rand() limit 0, 1100", nativeQuery = true)
+	@Query(value = "select * from random_gps where (6371 * acos(cos(radians(37.4976716)) * cos(radians(37 + lat)) * " + 
+			"cos(radians(127 + lon) - radians(127.0267342)) + sin(radians(37.4976716)) * sin(radians(37 + lat)))) <= 0.1", nativeQuery = true)
 	List<RandomGps> findAllByGps();
 }
