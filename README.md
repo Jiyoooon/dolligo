@@ -47,7 +47,7 @@
 
 
 * 로그인 / 메인화면 / 설정탭
-  ![1](/uploads/db3bd9226b663e91c377cfbbc46c0a6c/1.mp4)
+  ![](document/gif/user_1.mp4)
 
 
 * 전단지 보기 - 포인트 / 쿠폰 받기
