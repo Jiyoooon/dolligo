@@ -47,7 +47,7 @@
 
 
 * 로그인 / 메인화면 / 설정탭
-  ![](document/gif/user_1.mp4)
+  ![1](document/gif/user_1.mp4)
 
 
 * 전단지 보기 - 포인트 / 쿠폰 받기
