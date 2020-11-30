@@ -48,66 +48,64 @@
 
 * 로그인 / 메인화면 / 설정탭
 
-  <img src="/document/gif/user_1.gif" height="500" align="left"/>
+  <img src="/document/gif/user_1.gif" height="500" />
+  <br>
 
-  
 
 * 전단지 보기 - 포인트 / 쿠폰 받기
 
-  <img src="/document/gif/user_2.gif" height="500" align="left"/>
-  
-  
+  <img src="/document/gif/user_2.gif" height="500"/>
+  <br>
 
 
 * 포인트 / 쿠폰 확인
 
-  <img src="/document/gif/user_3.gif" height="500" align="left"/>
-  
-  
+  <img src="/document/gif/user_3.gif" height="500" />
+  <br>
 
 
 * 전단지 차단
 
-  <img src="/document/gif/user_4.gif" height="500" align="left"/>
-
+  <img src="/document/gif/user_4.gif" height="500"/>
+  <br>
   
 
 * 포인트 사용(기프티콘 & 현금화)
 
-  <img src="/document/gif/user_5.gif" height="500" align="left"/>
-
+  <img src="/document/gif/user_5.gif" height="500"/>
+  <br>
   
 
 * 프로필 수정
 
-  <img src="/document/gif/user_6.gif" height="500" align="left"/>
-
-
+  <img src="/document/gif/user_6.gif" height="500"/>
+  <br><br>
+  
 
 <h3>Advertiser App</h3>
 
 * 대시보드 화면
 
-  <img src="/document/gif/advertiser_1.gif" height="400" align="left"/>
-
+  <img src="/document/gif/advertiser_1.gif" height="400"/>
+  <br>
   
 
 * 전단지 관리
 
-  <img src="/document/gif/advertiser_2.gif" height="400" align="left"/>
-
+  <img src="/document/gif/advertiser_2.gif" height="400"/>
+  <br>
   
 
 * qr 방문 인증
 
-  <img src="/document/gif/advertiser_3.gif" height="500" align="left"/>
-
+  <img src="/document/gif/advertiser_3.gif" height="500"/>
+  <br>
   
 
 * 설정
 
-  <img src="/document/gif/advertiser_4.gif" height="500" align="left"/>
-
+  <img src="/document/gif/advertiser_4.gif" height="500"/>
+  <br>
 
 
 
